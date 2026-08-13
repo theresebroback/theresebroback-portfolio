@@ -1,5 +1,5 @@
 const hero = {
-  eyebrow: "Bygget med React, Sass og Vite",
+  eyebrow: "Therese Broback",
 
   title: "Digital designer med bakgrunn innen UX, frontend og visuell kommunikasjon",
 
