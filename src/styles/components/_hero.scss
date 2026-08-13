@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero {
+  padding: 4rem 0;
+  background-color: $blue;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 3;
+  }
+
+
+  &__title {
+    font-family: $font-heading;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    border-radius: $border-standard;
+  }
+
+
+  @include lg {
+    padding: 8rem 0;
+
+    .container {
+      flex-direction: row;
+    }
+  }
+}

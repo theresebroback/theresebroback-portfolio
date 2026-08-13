@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__brand {
+        display: flex;
+        gap: .35rem;
+        text-decoration: none;
+
+    }
+
+    &__firstname,
+    &__lastname {
+        font-family: $font-heading;
+        font-weight: 400;
+        color: $text;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 2.5rem;
+
+        a {
+            text-decoration: none;
+            color: $text;
+            font-family: $font-heading;
+            transition: color 0.2s ease;
+            padding-bottom: 0.5rem;
+            
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
