@@ -13,7 +13,6 @@
         display: flex;
         gap: .35rem;
         text-decoration: none;
-
     }
 
     &__firstname,
@@ -34,12 +33,121 @@
             color: $text;
             font-family: $font-heading;
             transition: color 0.2s ease;
-            padding-bottom: 0.5rem;
-            
 
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+
+    // Hamburger - skjult på desktop
+    &__menu-button {
+        display: none;
+    }
+}
+
+// Mobilmeny - skjult på desktop
+.mobile-nav {
+    display: none;
+}
+
+
+// ------------------------------------
+// MOBILE
+// ------------------------------------
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1.5rem 0;
+
+        &__nav {
+            display: none;
+        }
+
+        &__menu-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+
+            width: 32px;
+            height: 32px;
+            padding: 0;
+
+            border: none;
+            background: transparent;
+
+            cursor: pointer;
+
+            position: relative;
+            z-index: 101;
+
+            span {
+                display: block;
+                width: 24px;
+                height: 1.5px;
+                background: $text;
+
+                transition: transform 0.25s ease;
+            }
+        }
+
+        &--menu-open {
+
+            .header__menu-button {
+
+                span:first-child {
+                    transform: translateY(3.75px) rotate(45deg);
+                    background: $white;
+                }
+
+                span:last-child {
+                    transform: translateY(-3.75px) rotate(-45deg);
+                    background: $white;
+                }
+            }
+        }
+    }
+
+    // Selve mobilmenyen
+    .mobile-nav {
+        display: flex;
+
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        background: $brown;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+
+        a {
+            color: $white;
+            font-family: $font-heading;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &--open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
     }
 }
