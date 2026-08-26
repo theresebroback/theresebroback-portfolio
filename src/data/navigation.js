@@ -4,12 +4,12 @@ const navigation = [
         path: "#work"
     },
     {
-        title: "Om meg",
-        path: "#about"
+        title: "Erfaring",
+        path: "#cv"
     },
     {
-        title: "CV",
-        path: "#cv",
+        title: "Om meg",
+        path: "#about",
     },
 ];
 
