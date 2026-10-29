@@ -22,15 +22,40 @@ function Work() {
                             key={project.number}
                         >
                             <div className="project-card__image">
-                                <img
-                                    src={project.image}
-                                    alt={project.alt}
-                                />
+                                {project.url ? (
+                                    <a
+                                        href={project.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`Se prosjektet ${project.title}`}
+                                    >
+                                        <img
+                                            src={project.image}
+                                            alt={project.alt}
+                                        />
+                                    </a>
+                                ) : (
+                                    <img
+                                        src={project.image}
+                                        alt={project.alt}
+                                    />
+                                )}
                             </div>
 
                             <div className="project-card__content">
-                                <h3>{project.title}</h3>
-
+                                <h3>
+                                    {project.url ? (
+                                        <a
+                                            href={project.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {project.title}
+                                        </a>
+                                    ) : (
+                                        project.title
+                                    )}
+                                </h3>
                                 <p>{project.description}</p>
 
                                 <div className="project-card__tags">

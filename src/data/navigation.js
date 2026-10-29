@@ -5,11 +5,7 @@ const navigation = [
     },
     {
         title: "Erfaring",
-        path: "#cv"
-    },
-    {
-        title: "Om meg",
-        path: "#about",
+        path: "#experience"
     },
 ];
 
