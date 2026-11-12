@@ -1,9 +1,9 @@
 const hero = {
-  eyebrow: "UX · Frontend",
+  eyebrow: "Grafisk design · Frontend",
 
-  title: "Digital designer med bakgrunn innen UX, frontend og visuell kommunikasjon",
+  title: "Grafisk designer med øye for detaljer",
 
-  text: "En ny portefølje er under utvikling. Snart finner du prosjekter, erfaring og mer om hvordan jeg jobber med digitale løsninger.",
+  text: "Jeg har erfaring med å utvikle visuelle konsepter og skape gjennomtenkt materiell for både digitale og trykte flater. I tillegg har jeg kompetanse innen webdesign og frontendutvikling, noe som gir meg en bred forståelse for design på tvers av ulike flater.",
 };
 
 export default hero;
