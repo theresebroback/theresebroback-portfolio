@@ -6,11 +6,12 @@ import frydenbo from "../assets/images/frydenbo-1.png";
 import telaris from "../assets/images/telaris.png";
 import karcherRenhold from "../assets/images/karcher-renhold.png";
 import karcherMic from "../assets/images/karcher-mic.png";
+import nettpartnerRapport from "../assets/images/nettpartner-report.png"
 
 const work = {
     eyebrow: "Prosjekter",
     title: "Utvalgte prosjekter",
-    intro: "Et utvalg av prosjekter innen design, utvikling og visuelle konsepter.",
+    intro: "Et utvalg av prosjekter innen design, utvikling og visuelle konsepter. Noen av bildene er klikkbare og tar deg til det aktuelle prosjektet.",
 
     projects: [
         {
@@ -89,6 +90,16 @@ const work = {
             image: karcherMic,
             alt: "Karcher redskapsbærere katalog",
             url: "https://s1.kaercher-media.com/asset/media/file/41885/mic-brosjyre.pdf",
+        },
+        {
+            number: "09",
+            title: "Nettpartner - Bærekraftsrapport",
+            description:
+                "Oppsett og design av ny bærekraftsrapport for 2023. Frie tøyler til å utforme og inndele kapitler for en mer visuell opplevelse enn den tidligere versjonen som var et word-dokument med ren tekst.",
+            tags: ["inDesign", "Adobe"],
+            image: nettpartnerRapport,
+            alt: "Karcher redskapsbærere katalog",
+            url: "https://www.nettpartner.no/hubfs/Web/Om%20Nettpartner/B%C3%A6rekraft/B%C3%A6rekraftsrapporter/B%C3%A6rekraftsrapport%202023%20-%20Nettpartner.pdf",
         },
 
 
